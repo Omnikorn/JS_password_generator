@@ -9,8 +9,8 @@ function writePassword() {
   var lowerCase= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
   var nums=["0","1","2","3","4","5","6","7","8","9"];
   var symb=["!","£","$","%","#","&","(",")","*","+"];
-  let mutantArray =[];
-  let finalPass=[]
+  let mutantArray=[];
+  let finalPass=[];
 
   var q1=confirm( "do you want to use upper class ?");
   if (q1 == true) {
@@ -48,7 +48,7 @@ if (passLength<8 || passLength >128) {
     console.log(char);
     finalPass.push(char);
   }
-  var winner= finalPass.toString();
+  var winner= finalPass.join("");
   console.log ("final pass is " + winner);
   alert(" your final poass wird is" + winner);
 }
