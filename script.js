@@ -12,28 +12,28 @@ function writePassword() {
   let mutantArray=[];
   let finalPass=[];
 
-  var q1=confirm( "do you want to use upper class ?");
+  var q1=confirm( "Do you want to use uppercase?");
   if (q1 == true) {
-    mutantArray = mutantArray + bigCase;
-    console.log (mutantArray)
+    mutantArray = mutantArray.concat(bigCase);
+    //console.log (mutantArray)
   };
 
-  var q2=confirm(" Do you want to use lower case letters ?");
+  var q2=confirm("Do you want to use lowercase letters?");
   if (q2==true) {
-    mutantArray = mutantArray + lowerCase;
-    console.log(mutantArray);
+    mutantArray = mutantArray.concat(lowerCase);
+    //console.log(mutantArray);
   };
 
-  var q3=confirm("do you want to use numbers ?");
+  var q3=confirm("Do you want to use numbers?");
   if (q3==true) {
-    mutantArray = mutantArray + nums;
-    console.log(mutantArray);
+    mutantArray = mutantArray.concat(nums);
+    //console.log(mutantArray);
   };
 
-var q4=confirm("do you want to use special symbols ?");
+var q4=confirm("Do you want to use special symbols?");
 if (q4==true) {
-  mutantArray=mutantArray+ symb;
-  console.log(mutantArray);
+  mutantArray=mutantArray.concat(symb);
+  //console.log(mutantArray);
 };
 
 var passLength=prompt("How many charecters do you need in your password between 8 and 128");
@@ -50,7 +50,7 @@ if (passLength<8 || passLength >128) {
   }
   var winner= finalPass.join("");
   console.log ("final pass is " + winner);
-  alert(" your final poass wird is" + winner);
+  alert(" your final password is" + winner);
 }
 
 
