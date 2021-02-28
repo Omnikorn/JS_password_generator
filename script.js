@@ -10,16 +10,48 @@ function writePassword() {
   var nums=["0","1","2","3","4","5","6","7","8","9"];
   var symb=["!","£","$","%","#","&","(",")","*","+"];
   let mutantArray =[];
+  let finalPass=[]
 
   var q1=confirm( "do you want to use upper class ?");
   if (q1 == true) {
     mutantArray = mutantArray + bigCase;
     console.log (mutantArray)
+  };
+
+  var q2=confirm(" Do you want to use lower case letters ?");
+  if (q2==true) {
+    mutantArray = mutantArray + lowerCase;
+    console.log(mutantArray);
+  };
+
+  var q3=confirm("do you want to use numbers ?");
+  if (q3==true) {
+    mutantArray = mutantArray + nums;
+    console.log(mutantArray);
+  };
+
+var q4=confirm("do you want to use special symbols ?");
+if (q4==true) {
+  mutantArray=mutantArray+ symb;
+  console.log(mutantArray);
+};
+
+var passLength=prompt("How many charecters do you need in your password between 8 and 128");
+if (passLength<8 || passLength >128) {
+  alert("number of charecters is out of range");
+} else {
+  for (i=1; i < passLength; i++) {
+    console.log(i);
+    let newNum= Math.floor(Math.random() * mutantArray.length);
+    console.log(newNum);
+    let char = mutantArray[newNum];
+    console.log(char);
+    finalPass.push(char);
   }
-
-  
-
-
+  var winner= finalPass.toString();
+  console.log ("final pass is " + winner);
+  alert(" your final poass wird is" + winner);
+}
 
 
 
@@ -41,3 +73,4 @@ function writePassword() {
 // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
 writePassword()
+
