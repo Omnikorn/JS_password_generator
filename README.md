@@ -5,4 +5,6 @@ The user is greeted with a generate password button. Once pressed the user is pr
 Once that is done the user is asked to confirm the number of characters required for the password with anything less than 8 or more than 128 giving an out of range message. 
 Once the password is generated it appears in the text area within the webapp . please see attached image. 
 
-![Getting Started](./assets/pics/passwrod_generator_screenshot.png)
+![Getting Started](/assets/pics/passwrod_generator_screenshot.png)
+
+thank you very much.
