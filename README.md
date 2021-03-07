@@ -1,6 +1,6 @@
 # JS_password_generator
 
-
+![image](https://user-images.githubusercontent.com/75341811/110235105-3fc08b00-7f26-11eb-8995-a23f433c7ccf.png)
 
 The code has been refracted so the application works as follows: 
 The user is greeted with a generate password button. Once pressed the user is prompted through a series of options to include lowercase letters, uppercase letters , numbers and symbols in their password.
