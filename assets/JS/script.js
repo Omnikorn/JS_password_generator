@@ -63,7 +63,7 @@ function writePassword() {
 
 
   // this is there code 
-  // var password = generatePassword();
+  
   var passwordText = document.querySelector("#password");
 
   passwordText.value = winner;
